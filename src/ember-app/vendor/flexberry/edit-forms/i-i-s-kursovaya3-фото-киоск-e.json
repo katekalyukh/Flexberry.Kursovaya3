@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Фото киоск",
+  "name": "IISKursovaya3ФотоКиоскE",
+  "className": "ФотоКиоскE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya3-фото-киоск",
+      "modelProjection": "ФотоКиоскE"
+    }
+  ]
+}

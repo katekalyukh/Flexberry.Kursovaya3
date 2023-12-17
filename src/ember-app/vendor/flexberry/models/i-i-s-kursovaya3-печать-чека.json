@@ -1,0 +1,90 @@
+﻿{
+  "name": "IISKursovaya3ПечатьЧека",
+  "modelName": "i-i-s-kursovaya3-печать-чека",
+  "className": "ПечатьЧека",
+  "nameSpace": "IIS.Kursovaya3",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "иннОрг",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "компания",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "оплата",
+      "relatedTo": "i-i-s-kursovaya3-оплата",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "печатьФото",
+      "relatedTo": "i-i-s-kursovaya3-печать-фото",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПечатьЧекаE",
+      "modelName": "i-i-s-kursovaya3-печать-чека",
+      "attrs": [
+        {
+          "name": "иннОрг",
+          "caption": "Инн орг",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "компания",
+          "caption": "Компания",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ПечатьЧекаL",
+      "modelName": "i-i-s-kursovaya3-печать-чека",
+      "attrs": [
+        {
+          "name": "иннОрг",
+          "caption": "Инн орг",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "компания",
+          "caption": "Компания",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

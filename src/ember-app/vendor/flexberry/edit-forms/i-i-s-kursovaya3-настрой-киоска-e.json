@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Настрой киоска",
+  "name": "IISKursovaya3НастройКиоскаE",
+  "className": "НастройКиоскаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya3-настрой-киоска",
+      "modelProjection": "НастройКиоскаE"
+    }
+  ]
+}

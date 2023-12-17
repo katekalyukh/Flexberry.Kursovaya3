@@ -1,0 +1,125 @@
+﻿{
+  "name": "IISKursovaya3НастройКиоска",
+  "modelName": "i-i-s-kursovaya3-настрой-киоска",
+  "className": "НастройКиоска",
+  "nameSpace": "IIS.Kursovaya3",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "времяНастройки",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаНастройки",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "заправКартр",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наличиеБумаги",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "оператор",
+      "relatedTo": "i-i-s-kursovaya3-оператор",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "НастройКиоскаE",
+      "modelName": "i-i-s-kursovaya3-настрой-киоска",
+      "attrs": [
+        {
+          "name": "наличиеБумаги",
+          "caption": "Наличие бумаги",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "заправКартр",
+          "caption": "Заправ картр",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "датаНастройки",
+          "caption": "Дата настройки",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "времяНастройки",
+          "caption": "Время настройки",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "НастройКиоскаL",
+      "modelName": "i-i-s-kursovaya3-настрой-киоска",
+      "attrs": [
+        {
+          "name": "наличиеБумаги",
+          "caption": "Наличие бумаги",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "заправКартр",
+          "caption": "Заправ картр",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "датаНастройки",
+          "caption": "Дата настройки",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "времяНастройки",
+          "caption": "Время настройки",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

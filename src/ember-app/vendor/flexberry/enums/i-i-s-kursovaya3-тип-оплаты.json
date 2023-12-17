@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Kursovaya3",
+  "className": "ТипОплаты",
+  "enumObjects": {
+    "Монеты": "",
+    "Купюры": ""
+  }
+}

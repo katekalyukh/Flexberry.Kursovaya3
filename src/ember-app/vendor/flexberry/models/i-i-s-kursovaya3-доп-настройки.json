@@ -1,0 +1,78 @@
+﻿{
+  "name": "IISKursovaya3ДопНастройки",
+  "modelName": "i-i-s-kursovaya3-доп-настройки",
+  "className": "ДопНастройки",
+  "nameSpace": "IIS.Kursovaya3",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "кадрирование",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "уголок",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "чБЦвет",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "печатьФото",
+      "relatedTo": "i-i-s-kursovaya3-печать-фото",
+      "inverse": "допНастройки"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДопНастройкиE",
+      "modelName": "i-i-s-kursovaya3-доп-настройки",
+      "attrs": [
+        {
+          "name": "кадрирование",
+          "caption": "Кадрирование",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "чБЦвет",
+          "caption": "Ч б цвет",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "уголок",
+          "caption": "Уголок",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

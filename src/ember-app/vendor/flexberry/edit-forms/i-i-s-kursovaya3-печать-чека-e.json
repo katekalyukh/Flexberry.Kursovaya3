@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Печать чека",
+  "name": "IISKursovaya3ПечатьЧекаE",
+  "className": "ПечатьЧекаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya3-печать-чека",
+      "modelProjection": "ПечатьЧекаE"
+    }
+  ]
+}

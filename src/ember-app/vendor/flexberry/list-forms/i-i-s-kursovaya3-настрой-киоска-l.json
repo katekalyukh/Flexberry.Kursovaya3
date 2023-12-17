@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya3-настрой-киоска-e",
+  "editForm": "i-i-s-kursovaya3-настрой-киоска-e",
+  "external": false,
+  "caption": "Настрой киоска",
+  "name": "IISKursovaya3НастройКиоскаL",
+  "className": "НастройКиоскаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya3-настрой-киоска",
+      "modelProjection": "НастройКиоскаL"
+    }
+  ]
+}

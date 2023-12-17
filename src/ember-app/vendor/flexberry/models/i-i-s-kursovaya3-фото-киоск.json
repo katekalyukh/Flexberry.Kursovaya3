@@ -1,0 +1,87 @@
+﻿{
+  "name": "IISKursovaya3ФотоКиоск",
+  "modelName": "i-i-s-kursovaya3-фото-киоск",
+  "className": "ФотоКиоск",
+  "nameSpace": "IIS.Kursovaya3",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iD",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "адрес",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "настройКиоска",
+      "relatedTo": "i-i-s-kursovaya3-настрой-киоска",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "печатьФото",
+      "relatedTo": "i-i-s-kursovaya3-печать-фото",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ГлавноеМенюE",
+      "modelName": "i-i-s-kursovaya3-фото-киоск",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ГлавноеМенюL",
+      "modelName": "i-i-s-kursovaya3-фото-киоск",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ФотоКиоскE",
+      "modelName": "i-i-s-kursovaya3-фото-киоск",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ФотоКиоскL",
+      "modelName": "i-i-s-kursovaya3-фото-киоск",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

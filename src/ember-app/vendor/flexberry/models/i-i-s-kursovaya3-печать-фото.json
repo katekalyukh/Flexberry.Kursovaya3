@@ -1,0 +1,110 @@
+﻿{
+  "name": "IISKursovaya3ПечатьФото",
+  "modelName": "i-i-s-kursovaya3-печать-фото",
+  "className": "ПечатьФото",
+  "nameSpace": "IIS.Kursovaya3",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "носитель",
+      "type": "i-i-s-kursovaya3-вид-носителя",
+      "flexberryType": "ВидНосителя",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "размерВСм",
+      "type": "i-i-s-kursovaya3-выбор-размера",
+      "flexberryType": "ВыборРазмера",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "допНастройки",
+      "relatedTo": "i-i-s-kursovaya3-доп-настройки",
+      "inverse": "печатьФото"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ПечатьФотоE",
+      "modelName": "i-i-s-kursovaya3-печать-фото",
+      "attrs": [
+        {
+          "name": "размерВСм",
+          "caption": "Размер в см",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "носитель",
+          "caption": "Носитель",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ДопНастройкиE",
+          "caption": "Доп настройки",
+          "name": "допНастройки",
+          "relatedTo": "i-i-s-kursovaya3-доп-настройки",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ПечатьФотоL",
+      "modelName": "i-i-s-kursovaya3-печать-фото",
+      "attrs": [
+        {
+          "name": "размерВСм",
+          "caption": "Размер в см",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "носитель",
+          "caption": "Носитель",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

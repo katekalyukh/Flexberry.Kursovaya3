@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya3-печать-чека-e",
+  "editForm": "i-i-s-kursovaya3-печать-чека-e",
+  "external": false,
+  "caption": "Печать чека",
+  "name": "IISKursovaya3ПечатьЧекаL",
+  "className": "ПечатьЧекаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya3-печать-чека",
+      "modelProjection": "ПечатьЧекаL"
+    }
+  ]
+}

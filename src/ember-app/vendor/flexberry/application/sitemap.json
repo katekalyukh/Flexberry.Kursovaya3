@@ -1,0 +1,57 @@
+﻿{
+  "applicationCaption": "Kursovaya3",
+  "applicationTitle": "Kursovaya3",
+  "items": [
+    {
+      "link": null,
+      "menuName": "kursovaya3",
+      "caption": "Kursovaya3",
+      "title": "Kursovaya3",
+      "children": [
+        {
+          "link": "i-i-s-kursovaya3-оператор-l",
+          "menuName": null,
+          "caption": "Оператор",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya3-печать-чека-l",
+          "menuName": null,
+          "caption": "Печать чека",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya3-фото-киоск-l",
+          "menuName": null,
+          "caption": "Фото киоск",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya3-печать-фото-l",
+          "menuName": null,
+          "caption": "Печать фото",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya3-оплата-l",
+          "menuName": null,
+          "caption": "Оплата",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya3-настрой-киоска-l",
+          "menuName": null,
+          "caption": "Настрой киоска",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
